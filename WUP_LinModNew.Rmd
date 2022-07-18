@@ -35,13 +35,34 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 
 ### scatterplot
 
+```{r}
+plot(SIMS~ARM,data=data)
+```
+
+We see the father the graph goes on the x axis higher results were seen on the y axis.
+
+
 ### Numerical results
 
+```{r}
+cor(SIMS~ARM,data=data)
+```
+
+This is showing us the graph seems to be getting larger in scale by around .69
 
 ### Inferential  (Build model.1)
 
+```{r}
+model.1 <- lm(SIMS~ARM,data=data)
+summary.lm(model.1)
+```
+
+We fit the right equation into the line, this consist of SIMS=-4.095 + .054563 * ARM
+
+
 #### Predict at target point
 
+We predict a target value of .706544
 
 #### scatterplot with model fit
   
