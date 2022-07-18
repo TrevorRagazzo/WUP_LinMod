@@ -39,7 +39,7 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 plot(SIMS~ARM,data=data)
 ```
 
-We see the father the graph goes on the x axis higher results were seen on the y axis.
+We see the father the graph goes on the x axis higher results were seen on the y axis. We see as the ARM increases so does the SIMS.
 
 
 ### Numerical results
@@ -75,6 +75,15 @@ predict(model.1, Pdata)
 
 #### scatterplot with model fit
   
+
+```{r}
+basicNN <- ggplot(data,aes(y=SIMS,x=ARM))
+basicNN + geom_point()
+basicNN + geom_point() + geom_smooth(method=lm)
+```
+
+
+
 
 ## Model 2 SIM~GRIP
 
