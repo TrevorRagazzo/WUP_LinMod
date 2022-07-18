@@ -64,6 +64,15 @@ We fit the right equation into the line, this consist of SIMS=-4.095 + .054563 *
 
 We predict a target value of .706544
 
+```{r}
+Pdata = data.frame(ARM=88, GRIP=94)
+```
+
+```{r}
+predict(model.1, Pdata)
+```
+
+
 #### scatterplot with model fit
   
 
