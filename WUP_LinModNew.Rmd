@@ -98,6 +98,8 @@ basicNN + geom_point() + geom_smooth(method=lm)
 plot(SIMS~GRIP,data=data)
 ```
 
+We see from the scatterplot that with correlation with Simms and Grip is strong
+
 
 ### Numerical results 
 
@@ -115,9 +117,14 @@ model.2 <- lm(SIMS~GRIP,data=data)
 summary.lm(model.2)
 ```
 
-These inferential results show us that we have a standard deviation 1.295 and a Rsquared of .4053. So now we see a result of a higher Rsquared and a lower standard devation 
+These inferential results show us that we have a standard deviation 1.295 and a Rsquared of .4053. So now we see a result of a higher Rsquared and a lower standard deviation 
 
 #### predict model.2 at target point
+
+```{r}
+predict(model.2, Pdata)
+```
+
 
 #### now add the model fit to our plot for model.2
   
