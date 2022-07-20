@@ -156,8 +156,11 @@ lm(formula = SIMS= -5.433871 + .037311 * ARM .024470 * GRIP, data = data )
 
 #### predict model.3 at target point
   
+```{r}
+predict(model.3, Pdata)
+```
 
-
+The prediction that we see is the combination ARM + GRIP is the lowest at -2.13, and the higher plots seem to be 2.43 
 
 ## Comparing nested models ANOVA Test
 
