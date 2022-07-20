@@ -171,7 +171,7 @@ The prediction that we see is the combination ARM + GRIP is the lowest at -2.13,
 ```{r}
 anova(model.1,model.3)
 ```
-From the annova we see the best results come from ARM+GRIP rather than just using GRIP.
+From the annova we see the best results come from ARM+GRIP rather than just using GRIP. We see these results by the really low "p" value, showing that there is a low difference between the two different models
 
 ### Model.2 vs Model.3
 
