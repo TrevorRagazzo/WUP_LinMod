@@ -175,7 +175,11 @@ From the annova we see the best results come from ARM+GRIP rather than just usin
 
 ### Model.2 vs Model.3
 
+```{r}
+anova(model.2,model.3)
+```
 
+We see that still the ARM+GRIP model is still better, the p value is still very low this is showing little change. We see GRIP is the worst figure. 
 
 ## Informally compare Model.1 with model.2
 
