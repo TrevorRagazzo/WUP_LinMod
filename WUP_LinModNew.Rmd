@@ -164,8 +164,21 @@ The prediction that we see is the combination ARM + GRIP is the lowest at -2.13,
 
 ## Comparing nested models ANOVA Test
 
+
+
 ### Model.1 vs Model.3
+
+```{r}
+anova(model.1,model.3)
+```
+From the annova we see the best results come from ARM+GRIP rather than just using GRIP.
+
 ### Model.2 vs Model.3
 
+
+
 ## Informally compare Model.1 with model.2
+
+
+
 
