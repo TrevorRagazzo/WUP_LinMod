@@ -146,8 +146,18 @@ cor(SIMS~ARM+GRIP,data=data)
   
 ### Inferential  (Build 2-dimentional model.3)
 
+```{r}
+model.3 <- lm(SIMS~ARM+GRIP,data=data)
+summary.lm(model.3)
+```
+
+lm(formula = SIMS= -5.433871 + .037311 * ARM .024470 * GRIP, data = data )
+
+
 #### predict model.3 at target point
   
+
+
 
 ## Comparing nested models ANOVA Test
 
